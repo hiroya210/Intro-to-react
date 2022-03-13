@@ -1,8 +1,16 @@
-const Header = ({title}) => {
+import { Button } from "./Button"
+
+const Header = ({title, onAdd}) => {
+
   return (
-    <div>
+    <header className="header">
       <h1>{title}</h1>
-    </div>
+      <Button 
+        color="blue" 
+        text="Add Task"
+        onClick={onAdd}
+      />
+    </header>
   )
 }
 
